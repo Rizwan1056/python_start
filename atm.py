@@ -1,7 +1,11 @@
 # simple amount caluulate how many remain amount 
-
 print("\n\t=== WellCome To Currency Sort ===\n")
-rupee = int(input("Plz Enter a Amount: "))
+while True:
+    try:
+        rupee = int(input("Plz Enter a Amount: "))
+        break
+    except ValueError:
+        print("Invalid input. Please enter a valid integer.")
 
 fiveThousand =rupee // 5000 
 thousand = (rupee % 5000) // 1000
